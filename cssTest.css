@@ -1,0 +1,172 @@
+/*Selectors {{{1*/ 
+/*Universal Selector*/
+*.div { text-decoration:none; } 
+*[lang=fr] { font-size:14px; width:120px; } 
+
+/*Type Selectors*/
+td { font-size:14px; width:120px; } 
+a { text-decoration:none; } 
+
+/*Attribute Selectors*/
+h1[title] { color: blue; } 
+span[class=demo] { color: red; } 
+a[rel~="copyright"] { color:black; } 
+p[title^="val"] {color:#FF0000;}
+p[title$="val"] {font-weight:bold;}
+p[title*="val"] {text-decoration:underline;}
+
+/*Descendant Selectors*/
+table td { font-size:14px; } 
+div.sub a { font-size:14px; } 
+
+/*Child Selectors*/
+body > p { font-size:14px; } 
+
+/*ID Selectors*/
+#note { font-size:14px; width:120px;} 
+
+/*Class Selectors*/
+div.note { font-size:14px; } 
+.dream { font-size:14px; } 
+
+/*Grouping*/
+.td1,div a,body { font-size:14px; } 
+
+/*Pseudo-Classes {{{1*/
+.a:link{ color: green;}
+.a:hover{ color: green;}
+.a:active{ color: green;}
+.a:visited{ color: green;}
+.a:focus{ color: green;}
+.a:first-child{ color: green;}
+.a:first{ color: green;}
+.a:left{ color: green;}
+.a:right{ color: green;}
+.a:lang(fr){ color: green;}
+
+/*Pseudo-Elements {{{1*/
+a:first-letter {color: green;}
+a:first-line {color: green;}
+em:before { content: url("ding.wav");} 
+table:after { content: "END OF TABLE";} 
+
+/*At-Rules {{{1*/
+@import "print.css";
+@charset "Shift-JIS"; 
+@font-face { font-family: dreamy; font-weight: bold; src: url(http://www.example.com/font.eot); } 
+@fontdef url("http://www.example.com/sample.pfr"); 
+@page thin:first { size: 3in 8in }
+@media screen { BODY {font-size:12pt; } } 
+
+/*Declaration {{{1*/
+div { color:red!important } 
+
+div {-webkit-}
+
+/*color*/
+div{background:white;}
+div{background:blue;}
+
+/*html tag {{{1*/
+a
+abbr
+address
+area
+article
+aside
+audio
+b
+base
+bdo
+blockquote
+body
+br
+button
+canvas
+caption
+cite
+code
+col
+colgroup
+command
+datalist
+dd
+del
+details
+dfn
+div
+dl
+dt
+em
+embed
+fieldset
+figcaption
+figure
+footer
+form
+h1
+h2
+h3
+h4
+h5
+h6
+head
+header
+hgroup
+hr
+html
+i
+iframe
+img
+input
+ins
+keygen
+kbd
+label
+legend
+li
+link
+map
+mark
+menu
+meta
+meter
+nav
+noscript
+ol
+optgroup
+option
+output
+p
+param
+pre
+progress
+q
+rp
+rt
+ruby
+samp
+script
+section
+select
+small
+source
+span
+strong
+style
+sub
+summary
+sup
+table
+tbody
+td
+textarea
+tfoot
+th
+thead
+time
+title
+tr
+ul
+var
+video
